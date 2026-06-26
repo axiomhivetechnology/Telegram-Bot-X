@@ -1,0 +1,26 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "This project contains a Telegram AI Assistant Bot and a guide for exploring Telegram content.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axiomhivetechnology/Telegram-Bot-X.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/axiomhivetechnology/Telegram-Bot-X/issues"
+  },
+  "homepage": "https://github.com/axiomhivetechnology/Telegram-Bot-X#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "openai": "^6.45.0",
+    "telegraf": "^4.16.3"
+  }
+}
