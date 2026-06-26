@@ -12,7 +12,8 @@ This repository provides a standardized framework for the construction and deplo
     - [Python Build Specifications](#python-build-specifications)
     - [Node.js Build Specifications](#nodejs-build-specifications)
 5. [Advanced Systems Engineering](#advanced-systems-engineering)
-6. [Technical Reference Documentation](#technical-reference-documentation)
+6. [Testing and Quality Assurance](#testing-and-quality-assurance)
+7. [Technical Reference Documentation](#technical-reference-documentation)
 
 ---
 
@@ -74,6 +75,15 @@ Specifications for high-availability production environments:
 - **Credential Management:** Utilization of environment variables to ensure the security of the API authentication layer.
 - **Persistence Layer Design:** Integration of relational or non-relational database systems for long-term data retention.
 - **API Throttling Mitigation:** Implementation of rate-limiting logic to ensure service continuity within API constraints.
+
+---
+
+## Testing and Quality Assurance
+This repository implements a rigorous testing layer to ensure the functional integrity of the bot templates.
+- **Python**: Utilizes `pytest` with `pytest-cov` for comprehensive coverage analysis.
+- **Node.js**: Utilizes `Jest` for unit testing and automated mocking of framework dependencies.
+
+Refer to [Testing Standards](./docs/testing_and_coverage_standards.md) for detailed execution instructions.
 
 ---
 

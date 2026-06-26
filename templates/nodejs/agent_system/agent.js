@@ -1,5 +1,5 @@
 const { OpenAI } = require("openai");
-const { DynamicTool } = require("@langchain/core/tools");
+const { DynamicTool } = require("langchain/tools");
 const { ChatOpenAI } = require("@langchain/openai");
 const { createOpenAIFunctionsAgent, AgentExecutor } = require("langchain/agents");
 const { ChatPromptTemplate, MessagesPlaceholder } = require("@langchain/core/prompts");

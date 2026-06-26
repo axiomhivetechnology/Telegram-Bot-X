@@ -25,6 +25,13 @@ Modular bot frameworks utilize a middleware pipeline to process incoming updates
 -   **Distributed Task Orchestration**: Offloading computationally expensive or high-latency operations to background workers via systems such as Celery or Bull.
 
 ## 5. Deployment and System Orchestration
--   **Environment Containerization**: Using Docker to ensure environmental parity across the development life cycle.
+-   **Environment Containerization**: Using Docker to ensure environmental parity across the development life cycle and to provide a layer of isolation for the application runtime.
 -   **Process Monitoring and Lifecycle Management**: Implementation of tools such as PM2 or systemd to manage application uptime and resource utilization.
 -   **Cloud Infrastructure**: Deployment on Virtual Private Servers (VPS) or cloud-native platforms (AWS, Azure, GCP) for mission-critical service availability.
+
+## 6. Security and Integrity Protocols
+To prevent unauthorized system access and malicious alterations, the following security standards must be implemented:
+-   **Input Sanitization**: All incoming data from the Telegram API must be treated as untrusted. Rigorous validation and sanitization are required to prevent injection attacks.
+-   **Principle of Least Privilege**: The bot service should execute with the minimum necessary system permissions. Access to the host file system and network should be strictly controlled.
+-   **Dependency Integrity**: Regularly audit third-party libraries for known vulnerabilities and utilize lock files (`package-lock.json`, `requirements.txt`) to ensure reproducible and verified builds.
+-   **Authentication Layer Security**: API tokens must be stored in encrypted environment variables and never exposed in logs or version control.

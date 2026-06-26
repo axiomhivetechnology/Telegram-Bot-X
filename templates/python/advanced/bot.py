@@ -35,7 +35,7 @@ async def save_user(user_id, username, first_name):
         await db.commit()
 
 # Bot logic
-bot = Bot(token=TOKEN)
+bot = Bot(token=TOKEN or "12345678:ABCDEF-1234abcd5678efgh")
 dp = Dispatcher()
 
 @dp.message(Command("start"))
@@ -46,9 +46,10 @@ async def cmd_start(message: types.Message):
 @dp.message(Command("stats"))
 async def cmd_stats(message: types.Message):
     async with aiosqlite.connect('users.db') as db:
-        async with db.execute('SELECT COUNT(*) FROM users') as cursor:
-            row = await cursor.fetchone()
-            count = row[0]
+        cursor = await db.execute('SELECT COUNT(*) FROM users')
+        row = await cursor.fetchone()
+        count = row[0]
+        await cursor.close()
     await message.answer(f"Total registered users: {count}")
 
 async def main():

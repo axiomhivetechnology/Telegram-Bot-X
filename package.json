@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "@langchain/core": "^0.1.0",
+    "@langchain/openai": "^0.1.0",
+    "@types/jest": "^29.5.5",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.1.1"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "grammy": "^1.44.0",
+    "langchain": "^0.1.0",
+    "openai": "^6.45.0",
+    "telegraf": "^4.16.3"
+  }
+}

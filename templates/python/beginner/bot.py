@@ -28,10 +28,11 @@ async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
         text=update.message.text
     )
 
-if __name__ == '__main__':
+def run_bot():
+    """Initializes and runs the bot."""
     if not TOKEN:
         print("Error: TELEGRAM_TOKEN not found in environment variables.")
-        exit(1)
+        return
 
     application = ApplicationBuilder().token(TOKEN).build()
 
@@ -43,3 +44,6 @@ if __name__ == '__main__':
 
     print("Bot is starting...")
     application.run_polling()
+
+if __name__ == '__main__':
+    run_bot()

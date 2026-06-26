@@ -30,6 +30,8 @@ The agent system is decoupled from the Telegram transport layer. It operates as 
 - **Output**: Synthesized natural language response or a sequence of system actions.
 
 ## 5. Security and Safety Constraints
-- **Sandboxed Execution**: Tools should operate within restricted environments with limited access to the host system.
-- **Human-in-the-loop (HITL)**: For high-impact tools (e.g., data deletion), the architecture supports an intermediate state requiring manual approval before execution.
-- **Token Management**: Strict rate limiting and context window management to ensure cost efficiency and system stability.
+- **Sandboxed Execution**: Tools must operate within restricted, non-privileged environments. Direct access to sensitive system resources or arbitrary code execution capabilities is strictly prohibited.
+- **Human-in-the-loop (HITL)**: For high-impact tools (e.g., data modification or deletion), the architecture requires a mandatory intermediate state for manual administrative approval.
+- **Prompt Injection Mitigation**: Implementation of defensive prompting and input filtering to prevent malicious manipulation of the agent's reasoning logic.
+- **Integrity Monitoring**: Continuous auditing of agent tool-calling logs to identify and mitigate anomalous behavior or unauthorized system interaction.
+- **Token Management**: Strict rate limiting and context window management to ensure cost efficiency and prevent resource exhaustion.

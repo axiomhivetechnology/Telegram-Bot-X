@@ -33,7 +33,11 @@ class AgentState(TypedDict):
 
 # --- Node Definitions ---
 
-model = ChatOpenAI(model="gpt-4", streaming=True).bind_tools(tools)
+model = ChatOpenAI(
+    model="gpt-4",
+    streaming=True,
+    api_key=os.getenv("OPENAI_API_KEY") or "dummy_key"
+).bind_tools(tools)
 
 def call_model(state):
     messages = state['messages']
