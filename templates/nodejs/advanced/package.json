@@ -1,0 +1,13 @@
+{
+  "name": "telegram-bot-advanced-nodejs",
+  "version": "1.0.0",
+  "description": "High performance bot using grammY",
+  "main": "bot.js",
+  "dependencies": {
+    "grammy": "^1.17.2",
+    "dotenv": "^16.0.3"
+  },
+  "scripts": {
+    "start": "node bot.js"
+  }
+}
