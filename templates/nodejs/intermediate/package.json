@@ -1,0 +1,13 @@
+{
+  "name": "telegram-bot-intermediate-nodejs",
+  "version": "1.0.0",
+  "description": "Bot with Scenes and Session management",
+  "main": "bot.js",
+  "dependencies": {
+    "telegraf": "^4.12.2",
+    "dotenv": "^16.0.3"
+  },
+  "scripts": {
+    "start": "node bot.js"
+  }
+}
