@@ -13,7 +13,7 @@ This implementation utilizes the `aiogram 3` framework to provide a high-concurr
     ```bash
     pip install -r requirements.txt
     ```
-2.  **Environment Configuration**: Populate the `TELEGRAM_TOKEN` credential within the `.env` configuration file.
+2.  **Environment Configuration**: Populate the `TELEGRAM_TOKEN` credential within the `.env configuration file.
 3.  **Service Initialization**:
     ```bash
     python bot.py
