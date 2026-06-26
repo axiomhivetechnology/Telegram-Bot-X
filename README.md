@@ -57,12 +57,14 @@ Located in `templates/python/`:
 - **[Baseline Implementation](./templates/python/beginner):** Synchronous request handling using `python-telegram-bot`.
 - **[Stateful Implementation](./templates/python/intermediate):** Management of conversation states and structured data collection.
 - **[Asynchronous Architecture](./templates/python/advanced):** Implementation of the `aiogram` framework with `aiosqlite` persistence and containerization.
+- **[AI Agent System](./templates/python/agent_system):** Modular agentic architecture with tool-calling capabilities using LangGraph.
 
 ### Node.js Build Specifications
 Located in `templates/nodejs/`:
 - **[Baseline Implementation](./templates/nodejs/beginner):** Implementation utilizing the `Telegraf` framework for Node.js.
 - **[Stateful Implementation](./templates/nodejs/intermediate):** Utilization of wizard scenes and session-based state retention.
 - **[High-Throughput Architecture](./templates/nodejs/advanced):** Implementation using the `grammY` framework for optimized resource management.
+- **[AI Agent System](./templates/nodejs/agent_system):** Orchestrated agent architecture using LangChain for autonomous task execution.
 
 ---
 
